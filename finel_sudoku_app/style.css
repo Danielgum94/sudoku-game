@@ -1,0 +1,223 @@
+
+
+
+body{
+  position: relative;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sudoku-app {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 105px;
+}
+
+#login{
+  border-radius: 10px;
+  position: relative;
+  height: 310px;
+  width: 245px;
+  border: 4px rgb(0, 87, 9) solid;
+  background: #deff5f2b;
+}
+
+h1{
+  font-size: 25px;
+    margin-left: 55px;
+    position: absolute;
+    text-align: center;
+    font-family: cursive;
+}
+
+#lb1{
+  color: black;
+  position: absolute;
+  margin-left: 65px;
+  margin-top: 60px;
+  font-size: 15px;
+  font-family: cursive;
+  text-decoration: underline;
+}
+
+#uname{
+  text-align: center;
+  position: absolute;
+  border-radius: 6px;
+  width: 160px;
+  padding: 4px;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+#pwd{
+  width: 160px;
+    border-radius: 6px;
+    margin-top: 195px;
+    margin-left: 40px;
+    position: absolute;
+    padding: 4px;
+}
+
+#lb2{
+  position: absolute;
+  color: black;
+  text-decoration: underline;
+  font-family: cursive;
+  font-size: 15px;
+  margin-top: 155px;
+  margin-left: 65px;
+}
+
+#login-btn{
+  margin-left: 90px;
+  margin-top: 260px;
+  position: absolute;
+  padding: 5px;
+  border-radius: 3px;
+  width: 60px;
+}
+
+
+#puzzle {
+  width: 540px;
+  height: 540px;
+}
+
+.odd-places {
+  background-color: rgb(182, 182, 182);
+}
+.even-places{
+  background-color: rgb(220, 239, 255);
+}
+
+#puzzle input {
+  text-align: center;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border: 1px black solid;
+}
+
+.difficulty-buttons{
+  background-color: #ffffe5d9;
+    margin-top: 125px;
+    border-radius: 10px;
+    border: 1px solid #3db400;
+    height: 145px;
+    width: 375px;
+}
+
+h2{
+  font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-family: cursive;
+}
+
+p{
+  color: black;
+  position: absolute;
+  margin: -8px;
+  margin-left: 140px;
+  text-decoration: underline;
+}
+
+.level-btn{
+  color: black;
+  border-radius: 20px;
+  height: 42px;
+  width: 80px;
+  margin-left: 32px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+
+
+#again-btn{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: -130px;
+  position: absolute;
+}
+
+
+
+#finish-btn{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-top: 10px;
+    margin-left: 45px;
+    position: absolute;
+  
+}
+
+
+
+
+#puzzle,
+#difficulty-buttons,
+#gameplay-buttons,
+#time,
+#playAgainButton {
+  display: none;
+
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div class="sudoku-app">
+      <!-- phase 1 -->
+      <form id="login">
+        <div class="phase1-div">
+          <h1>Sudoku app</h1>
+          <label id="lb1">Enter Username:</label>
+          <input type="text" placeholder="Enter User Name" id="uname" />
+        </div>
+        <div>
+          <label id="lb2">Enter Password:</label>
+          <input type="password" placeholder="* * * * *" id="pwd" />
+        </div>
+        <button id="login-btn" type="button" onclick="login()">Login</button>
+      </form>
+
+      <!-- phase 2 -->
+      <div class="difficulty-buttons" id="difficulty-buttons">
+        <h2>Welcome abcd</h2> <br>
+        <p>Choose a level: </p>
+        <button class="level-btn" onclick="loadGameWithDifficulty('easy')">Easy</button>
+        <button class="level-btn" onclick="loadGameWithDifficulty('normal')">Normal</button>
+        <button class="level-btn" onclick="loadGameWithDifficulty('hard')">Hard</button>
+      </div>
+
+      <!-- phase 3 -->
+      <div id="puzzle"></div>
+     
+      <div id="gameplay-buttons">
+        <button id="again-btn" onclick="againButton()">Again</button>
+        <button id="finish-btn" onclick="finishButton()">Finish</button>
+        <!-- <input type="text" id="time-run">
+        <button onclick="setTimeout(setTime)" id="timer">"</button> -->
+      </div>
+    
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
